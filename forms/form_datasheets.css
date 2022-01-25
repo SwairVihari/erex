@@ -20,7 +20,9 @@
     vertical-align: text-top;
     width: 20px;
     height: 20px;
-    background: #c60000;
+    background: white;
+    border: 2px solid #c60000;
+
   }
   .styled-checkbox:hover + label:before {
     background: #c60000;
@@ -29,6 +31,8 @@
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
   }
   .styled-checkbox:checked + label:before {
+    /* border: 2px solid black; */
+    border: none;
     background: #c60000;
   }
   .styled-checkbox:disabled + label {
@@ -182,7 +186,7 @@ p{
   .navbar__item{  
     height: 80px;  
     /* border: 2px solid green; */
-    margin: 0 1em ;
+    /* margin: 0 1em ; */
   }  
   .navbar__links{  
     color: #000;  
@@ -265,16 +269,27 @@ p{
     margin: 0px 10px 0 0 ;
   }
 
-  .display-none{
-      display: none;
-  }
-
+  
   .response{
-      text-align: center;
+    text-align: center;
       color: #c60000;
       font-size: 2rem;
-  }
-  
+      /* border: 2px solid green; */
+      height: 50vh;
+      width: 90%;
+      margin: 50px auto;
+      border-radius: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 5px 47px -4px rgba(0,0,0,0.84);
+      -webkit-box-shadow: 5px 5px 47px -4px rgba(0,0,0,0.84);
+      -moz-box-shadow: 5px 5px 47px -4px rgba(0,0,0,0.84);
+    }
+    
+    .display-none{
+        display: none;
+    }
   
   
   

@@ -68,7 +68,7 @@ body {
   .navbar__item{  
     height: 80px;  
     /* border: 2px solid green; */
-    margin: 0 1em ;
+    /* margin: 0 1em ; */
   }  
   .navbar__links{  
     color: #000;  
@@ -363,8 +363,8 @@ time {
 
 
 footer{
-    color:white;
-    background-color: black;
+    color:black;
+    background-color: white;
     padding: 100px 50px;
     font-size: 1.2rem;
     display: flex;
@@ -404,7 +404,10 @@ footer{
   .social-media .fab{
     margin: 0px 10px 0 0 ;
   }
-  
+  .social-media a{
+    color: #C60000;
+    transform: scale(1.1);
+  }
 
 @media screen and (max-width: 1000px) { 
     

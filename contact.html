@@ -49,11 +49,11 @@
   <div class="underline"></div>
 
   <div class="form-part">
-    <div class="form">
+    <div id="form" class="form">
       <h2>Fill the Form</h2>
-      <p class="p-class" type="Name:"><input id="name" placeholder="Write your name here.."></input></p>
-      <p class="p-class" type="Email:"><input id="email" placeholder="Let us know how to contact you back.."></input></p>
-      <p class="p-class" type="Message:"><input id="msg" placeholder="What would you like to tell us.."></input></p>
+      <p class="p-class" type="Name:"><input id="name" placeholder="Write your name here.." required></input></p>
+      <p class="p-class" type="Email:"><input id="email" placeholder="Let us know how to contact you back.." required></input></p>
+      <p class="p-class" type="Message:"><input id="msg" placeholder="What would you like to tell us.." required></input></p>
       <button onclick="contactform()" class="form-button">Send Message</button>
       <div id="response-id" class="response display-none">
         Message successfully sent.
@@ -61,40 +61,45 @@
   </div>
   </div>
 
-  <footer>
-    <div class="footer-erex">
-      <img src="./images/log-footer.png" alt="">
-      <p>E-Rex is a leader in Lithium batteries with an extensive product range from 12 Volts to 10 M.W. We built inverted to be a facilitator in the global shift towards future mobility and energy storage</p>
-    </div>
-  
-    <div class="footer-address">
-      <h4>Made With ❤️ in India </h4>
-  
-      <p>
-        Manufacturing Unit: 112, KB logistic park, Chadotar- Gadh Highway, Palanpur, Gujarat, 385001
-  Email- info@e-rexindia.com
-  Service: 6565324698
-  Sales/Dealership: 7665532476
-  
-      </p>
-    </div>
-  
-   
-  </footer>
-  
-  <div class="footest">
-  <div class="copyright">
-    © Copyright 2022 | E-Rex All Rights Reserved
+  <div id="response" class="form display-none">
+    <h1>Thank You For your Response!!</h1>
   </div>
-  
-  <div class="social-media">
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-linkedin"></i>
-    <i class="far fa-envelope"></i>
+
+ 
+<footer>
+  <div class="footer-erex">
+    <img src="./LOGO-removebg-preview.png" alt="">
+    <p>E-Rex is a leader in Lithium batteries with an extensive product range from 12 Volts to 10 M.W. We built inverted to be a facilitator in the global shift towards future mobility and energy storage</p>
   </div>
+
+  <div class="footer-address">
+    <h4>Made With ❤️ in India </h4>
+
+    <!-- <p>
+      Manufacturing Unit: 112, KB logistic park, Chadotar- Gadh Highway, Palanpur, Gujarat, 385001
+Email- info@e-rexindia.com
+Service: 6565324698
+Sales/Dealership: 7665532476
+
+    </p> -->
   </div>
+
+ 
+</footer>
+
+<div class="footest">
+<div class="copyright">
+  © Copyright 2022 | E-Rex All Rights Reserved
+</div>
+
+<div class="social-media">
+ <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.instagram.com/erex_india/%3Fhl%3Den&ved=2ahUKEwjl-dWu28z1AhXwsVYBHck1AugQjjh6BAgFEAE&usg=AOvVaw2oEu-pQDX_5Hn8k9Xql5iX"> <i class="fab fa-instagram"></i></a>
+ <a href="https://m.facebook.com/TheHeartOfEV/"> <i class="fab fa-facebook"></i></a>
+  <!-- <i class="fab fa-twitter"></i> -->
+ <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://in.linkedin.com/company/e-rex&ved=2ahUKEwiRm7SB28z1AhV2jVYBHVetD-cQjjh6BAhGEAE&usg=AOvVaw0QObqYAS-6DOp8-Nz6n6DC"><i class="fab fa-linkedin"></i></a> 
+ <a href="mailto:erexindia@gmail.com"> <i class="far fa-envelope"></i></a>
+</div>
+</div>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
     (function() {

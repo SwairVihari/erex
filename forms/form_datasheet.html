@@ -43,19 +43,19 @@
           </ul>  
         </div>  
       </nav>   
-    <div class="big-container">
+    <div id="bigcontainer" class="big-container ">
         <h2>Fill Form For DataSheets</h2>
         <div class="underline"></div>
         <!-- <label>Your Email</label> -->
-        <input type="email" autocomplete="on" id="name" autofocus name="userid" placeholder="Please Enter Email" /><br />
+        <input type="email" autocomplete="on" id="name" autofocus name="userid" placeholder="Please Enter Email" required /><br />
         <!-- <label>Mobile Number:</label> -->
-        <input type="number" id="phone" placeholder="Please Enter Mobile Number" name="mobilenumber" /><br />
+        <input type="number" id="phone" placeholder="Please Enter Mobile Number" name="mobilenumber" requireds /><br />
         <p>Please Select Battery Category:</p>
         <ul class="unstyled centered">
     
-        <li> <input class="styled-checkbox"  type="checkbox" name="datasheet" value="E-Bicycle" id="c1"> <label for="c1"> E-Bicycle</label><br/></li>
+        <li> <input class="styled-checkbox"  type="checkbox" name="datasheet" value="E-Bicycle" id="c1"> <label for="c1"> E-Cycle</label><br/></li>
+        <li><input  class="styled-checkbox" type="checkbox" name="datasheet" value="Smart-Bike" id="c3"> <label for="c3"> E-Bike</label><br/></li>
         <li><input class="styled-checkbox"  type="checkbox" name="datasheet" value="E-Rikshaw" id="c2"> <label for="c2"> E-Rikshaw</label><br/></li>
-        <li><input  class="styled-checkbox" type="checkbox" name="datasheet" value="Smart-Bike" id="c3"> <label for="c3"> Smart Bike</label><br/></li>
         <li><input class="styled-checkbox"  type="checkbox" name="datasheet" value="Solar Batteries" id="c4"> <label for="c4"> Solar Batteries</label><br/></li>
         <li><input class="styled-checkbox"  type="checkbox" name="datasheet" value="Agriculture Batteries" id="c5"> <label for="c5"> Agriculture Batteries</label><br/></li>
         <li><input class="styled-checkbox"  type="checkbox" name="datasheet" value="Power Wall" id="c6"> <label for="c6"> Power Wall</label><br/></li>
@@ -65,10 +65,10 @@
 
         <input type="submit" id="btn" value="Submit" />
 
-        <div id="responsed" class="response display-none">
-            <p>Form Submission Confirmed</p>
-        </div>
-    </div>
+      </div>
+      <div id="responsed" class="response display-none">
+          <p>Thank You For Your Response!!</p>
+      </div>
 
     <footer>
         <div class="footer-erex">
@@ -154,6 +154,8 @@ emailjs.init("user_zEAAkQTymyXU3nv8GLQHo");
             .then((res)=>{
             console.log("Success", res.status);
             let response = document.getElementById("responsed")
+            document.getElementById("bigcontainer").classList.add("display-none");
+        
             response.classList.remove("display-none")
             })
 

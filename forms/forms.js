@@ -29,7 +29,8 @@ function contactform(){
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("msg").value= "";
-        document.getElementById("response-id").classList.remove("display-none")   
+        document.getElementById("form").classList.add("display-none");
+        document.getElementById("response").classList.remove("display-none");   
      })
     
 }
