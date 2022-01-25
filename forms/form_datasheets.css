@@ -227,8 +227,8 @@ p{
     transition: all 0.3s ease;  
   } 
   footer{
-    color:white;
-    background-color: black;
+    color:black;
+    background-color: white;
     padding: 100px 50px;
     font-size: 1.2rem;
     display: flex;
@@ -291,7 +291,10 @@ p{
         display: none;
     }
   
-  
+    .social-media a{
+      color: #C60000;
+      transform: scale(1.1);
+    }
   
   @media screen and (max-width: 1000px) { 
     
