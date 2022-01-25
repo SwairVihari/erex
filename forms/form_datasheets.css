@@ -186,7 +186,7 @@ p{
   .navbar__item{  
     height: 80px;  
     /* border: 2px solid green; */
-    /* margin: 0 1em ; */
+    margin: 0 1em ;
   }  
   .navbar__links{  
     color: #000;  
@@ -297,6 +297,12 @@ p{
     }
   
   @media screen and (max-width: 1000px) { 
+
+    .navbar__item{  
+      height: 80px;  
+      /* border: 2px solid green; */
+      margin: 0 0em ;
+    }  
     
     #navbar__logo{  
       
