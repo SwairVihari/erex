@@ -1,0 +1,58 @@
+footer{
+    color:white;
+    background-color: black;
+    padding: 100px 50px;
+    font-size: 1.2rem;
+    display: flex;
+  }
+  
+  .footer-erex img{
+    width: 300px;
+    /* border: 2px solid red; */
+    margin-bottom: 50px;
+  }
+  
+  .footer-address{
+    /* border: 2px solid green; */
+    margin: 40px 0px;
+    width: 50%;
+  }
+  
+  .footest{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 20px 0px;
+  }
+  
+  .copyright{
+    text-align: center;
+  
+    font-size: 1.2rem;
+  }
+  
+  .social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media .fab{
+    margin: 0px 10px 0 0 ;
+  }
+  
+  
+  
+  
+  
+    @media screen and (max-width: 1000px) { 
+ 
+footer{
+    flex-direction: column;
+  }
+  
+  .footer-address{
+    width: 90%;
+  }
+  
+    }  

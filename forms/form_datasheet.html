@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_datasheets.css">
+    <title>Request A DataSheet</title>
+</head>
+<body>
+    <nav class="navbar">  
+        <div class="navbar__container">  
+          <a href="/index.html" id="navbar__logo">
+            <img src="../LOGO-removebg-preview.png" alt="" srcset=""/>
+           </a>  
+          <div class="navbar__toggle" id="mobile-menu">  
+            <span class="bar"></span>  
+            <span class="bar"></span>  
+            <span class="bar"></span>  
+          </div>  
+          <ul class="navbar__menu">  
+            <li class="navbar__item">  
+              <a href="../index.html" class="navbar__links" id="home-page">Home</a>  
+            </li>  
+            <li class="navbar__item">  
+              <a href="../greenmobility.html" class="navbar__links" id="Green-Mobility-page">Green Mobility</a>  
+             </li>  
+             <li class="navbar__item">  
+               <a href="../powerstorage.html" class="navbar__links" id="Power-Storage-page">Power Storage</a>  
+             </li> 
+             <li class="navbar__item">  
+               <a href="../ourStory.html" class="navbar__links" id="About-us-page">About Us</a>  
+             </li>
+             <li class="navbar__item">  
+               <a href="../career.html" class="navbar__links" id="Power-Storage-page">Career</a>  
+             </li>  
+             <li class="navbar__item">  
+               <a href="../contact.html" class="navbar__links" id="Power-Storage-page">Contact Us</a>  
+             </li>
+            <li class="navbar__btn">  
+              <a href="#" class="button" id="Contact-us-page">Know your Warranty</a>  
+            </li>  
+          </ul>  
+        </div>  
+      </nav>   
+    <div class="big-container">
+        <h2>Fill Form For DataSheets</h2>
+        <div class="underline"></div>
+        <!-- <label>Your Email</label> -->
+        <input type="email" autocomplete="on" id="name" autofocus name="userid" placeholder="Please Enter Email" /><br />
+        <!-- <label>Mobile Number:</label> -->
+        <input type="number" id="phone" placeholder="Please Enter Mobile Number" name="mobilenumber" /><br />
+        <p>Please Select Battery Category:</p>
+        <ul class="unstyled centered">
+    
+        <li> <input class="styled-checkbox"  type="checkbox" name="datasheet" value="E-Bicycle" id="c1"> <label for="c1"> E-Bicycle</label><br/></li>
+        <li><input class="styled-checkbox"  type="checkbox" name="datasheet" value="E-Rikshaw" id="c2"> <label for="c2"> E-Rikshaw</label><br/></li>
+        <li><input  class="styled-checkbox" type="checkbox" name="datasheet" value="Smart-Bike" id="c3"> <label for="c3"> Smart Bike</label><br/></li>
+        <li><input class="styled-checkbox"  type="checkbox" name="datasheet" value="Solar Batteries" id="c4"> <label for="c4"> Solar Batteries</label><br/></li>
+        <li><input class="styled-checkbox"  type="checkbox" name="datasheet" value="Agriculture Batteries" id="c5"> <label for="c5"> Agriculture Batteries</label><br/></li>
+        <li><input class="styled-checkbox"  type="checkbox" name="datasheet" value="Power Wall" id="c6"> <label for="c6"> Power Wall</label><br/></li>
+        <li> <input class="styled-checkbox"  type="checkbox" name="datasheet" value="Industrial Project" id="c7"> <label for="c7"> Industrial Project</label><br/></li>
+        </ul>
+
+
+        <input type="submit" id="btn" value="Submit" />
+
+        <div id="responsed" class="response display-none">
+            <p>Form Submission Confirmed</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-erex">
+          <img src="../images/log-footer.png" alt="">
+          <p>E-Rex is a leader in Lithium batteries with an extensive product range from 12 Volts to 10 M.W. We built inverted to be a facilitator in the global shift towards future mobility and energy storage</p>
+        </div>
+      
+        <div class="footer-address">
+          <h4>Made With ❤️ in India </h4>
+      
+          <p>
+            Manufacturing Unit: 112, KB logistic park, Chadotar- Gadh Highway, Palanpur, Gujarat, 385001
+      Email- info@e-rexindia.com
+      Service: 6565324698
+      Sales/Dealership: 7665532476
+      
+          </p>
+        </div>
+      
+       
+      </footer>
+      
+      <div class="footest">
+      <div class="copyright">
+        © Copyright 2022 | E-Rex All Rights Reserved
+      </div>
+      
+      <div class="social-media">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="far fa-envelope"></i>
+      </div>
+      </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+emailjs.init("user_zEAAkQTymyXU3nv8GLQHo");
+})();
+</script>
+    
+   <!-- <script src="./forms.js"></script> -->
+
+   <script>
+       const menu = document.querySelector('#mobile-menu');  
+ const menuLinks = document.querySelector('.navbar__menu');  
+ // Display mobile menu  
+ const mobieMenu = () =>{  
+ menu.classList.toggle('is-active')  
+ menuLinks.classList.toggle('active')  
+ }  
+ menu.addEventListener('click', mobieMenu)  
+ function myFunction() {  
+   document.getElementById("demo").innerHTML = "Hello World";  
+  }
+
+  
+
+       const btn = document.querySelector('#btn');
+        btn.addEventListener('click', (event) => {
+
+            let checkboxes = document.querySelectorAll('input[name="datasheet"]:checked');
+            let Name = document.getElementById("name").value;
+            let MobileNumber = document.getElementById("phone").value;
+            let values = "";
+            checkboxes.forEach((checkbox) => {
+                values = values + checkbox.value + "<br/>";
+            });
+
+            console.log(Name);
+            console.log(MobileNumber);
+            console.log(values);
+
+            var tempParams  = {
+            Email: Name,
+            Mobile: MobileNumber,
+            categories: values
+            }
+
+            emailjs.send('service_kb82124','template_xhmg50a',tempParams)
+            .then((res)=>{
+            console.log("Success", res.status);
+            let response = document.getElementById("responsed")
+            response.classList.remove("display-none")
+            })
+
+            
+        }); 
+   </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+</body>
+</html>
