@@ -99,12 +99,17 @@
     transition: all 0.3s ease;  
   } 
   
+
   footer{
     color:black;
     background-color: white;
     padding: 100px 50px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     display: flex;
+  }
+  
+  footer h4{
+    font-size: 0.8rem;
   }
   
   .footer-erex img{
@@ -249,6 +254,7 @@
       /* border: 2px solid red;  */
       width: 100px;
       height: 20px;
+      transform: scale(1.5);
       
       }  
     

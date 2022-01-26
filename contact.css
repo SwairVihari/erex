@@ -39,6 +39,7 @@
   width: 200px;
   height: 100%;
   
+  
   }  
 
   #navbar__logo img{
@@ -218,15 +219,19 @@ p-class:before {
 }
 
 
-  
+
 footer{
-    color:black;
-    background-color: white;
-    padding: 100px 50px;
-    font-size: 1.2rem;
-    display: flex;
-  }
-  
+  color:black;
+  background-color: white;
+  padding: 100px 50px;
+  font-size: 0.8rem;
+  display: flex;
+}
+
+footer h4{
+  font-size: 0.8rem;
+}
+
   .footer-erex img{
     width: 300px;
     /* border: 2px solid red; */
@@ -283,6 +288,7 @@ footer{
       /* border: 2px solid red;  */
       width: 100px;
       height: 20px;
+      transform: scale(1.5);
       
       }  
     

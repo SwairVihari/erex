@@ -46,6 +46,7 @@
   width: 200px;
   height: 100%;
   
+  
   }  
 
   #navbar__logo img{
@@ -340,6 +341,14 @@ z-index: 1;
   margin: 40px 50px;
 }
 
+.energy-thuster-text p span{
+  font-size: 2rem;
+  color:#b92121;
+  text-transform: uppercase;
+}
+
+
+
 .our-investors{
   text-align: center;
   color: white;
@@ -526,8 +535,12 @@ footer{
   color:black;
   background-color: white;
   padding: 100px 50px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   display: flex;
+}
+
+footer h4{
+  font-size: 0.8rem;
 }
 
 .footer-erex img{
@@ -591,6 +604,7 @@ footer{
       /* border: 2px solid red;  */
       width: 100px;
       height: 20px;
+      transform: scale(1.5);
       
       }  
     

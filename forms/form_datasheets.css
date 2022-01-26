@@ -165,6 +165,7 @@ p{
   /* border: 2px solid red;  */
   width: 200px;
   height: 100%;
+ 
   
   }  
 
@@ -226,13 +227,19 @@ p{
     color: #C60000;  
     transition: all 0.3s ease;  
   } 
-  footer{
-    color:black;
-    background-color: white;
-    padding: 100px 50px;
-    font-size: 1.2rem;
-    display: flex;
-  }
+ 
+footer{
+  color:black;
+  background-color: white;
+  padding: 100px 50px;
+  font-size: 0.8rem;
+  display: flex;
+}
+
+footer h4{
+  font-size: 0.8rem;
+}
+
   
   .footer-erex img{
     width: 300px;
@@ -309,6 +316,7 @@ p{
       /* border: 2px solid red;  */
       width: 100px;
       height: 20px;
+      transform: scale(1.5);
       
       }  
     
