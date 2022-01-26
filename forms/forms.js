@@ -22,6 +22,10 @@ function contactform(){
         message: document.getElementById("msg").value
     }
 
+    if(tempParams1.from_name=="" || tempParams1.email == "" || tempParams1.message == "" ){
+        alert("Please fill the form")
+        return
+      }
     console.log(tempParams1)
     emailjs.send('service_kb82124','template_xm1m1uc',tempParams1)
     .then((res)=>{

@@ -140,15 +140,22 @@ emailjs.init("user_zEAAkQTymyXU3nv8GLQHo");
                 values = values + checkbox.value + "<br/>";
             });
 
-            console.log(Name);
+            console.log(Name=="");
             console.log(MobileNumber);
             console.log(values);
+
+            if(Name=="" || MobileNumber == "" || values == "" ){
+              alert("Please fill the form")
+              return
+            }
 
             var tempParams  = {
             Email: Name,
             Mobile: MobileNumber,
             categories: values
             }
+
+
 
             emailjs.send('service_kb82124','template_xhmg50a',tempParams)
             .then((res)=>{
