@@ -141,7 +141,8 @@
     /* border: 2px solid thistle; */
     padding: 20px 40px;
     text-align: center;
-    background-color: #C60000;
+    background-color: white;
+    color: black;
     border-radius: 10px;
     margin: 20px;
   }

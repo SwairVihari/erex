@@ -115,6 +115,37 @@
     margin: 0 auto;
     margin-bottom: 30px;
   }
+
+  .address{
+    /* border: 2px solid green; */
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 22px;
+    max-width: 500px;
+    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+
+  }
+
+  
+  .address p {
+    margin: 20px 0px;
+  }
+
+  .call-us{
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 22px;
+    max-width: 500px;
+    box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
+  }
+
+  .call-us p {
+    margin: 20px 0px;
+  }
   
   .form-part{
     /* border: 2px solid rgb(31, 31, 31); */
