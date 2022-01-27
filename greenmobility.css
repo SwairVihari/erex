@@ -106,6 +106,20 @@
       color: #C60000;
   }
 
+  .underline{
+    margin: 20px auto;
+    height: 2px;
+    width: 50%;
+    max-width: 300px;
+    background-color: black;
+  }
+
+  p{
+    margin: 50px auto;
+    max-width: 700px;
+    text-align: center;
+  }
+
   
 .parent-container{
     /* border: 2px solid red; */

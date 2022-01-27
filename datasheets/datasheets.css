@@ -239,6 +239,18 @@
     margin-top: 0px;
     padding: 5px 20px;
 }
+
+.wall-tall-btn{
+  background-color: #c60000;
+    border-radius: 22px;
+    color: white;
+    text-decoration: none;
+    margin:0  auto;
+    margin-top: 20px;
+    padding: 5px 20px;
+    width: 120px;
+    display: block;
+}
   
   
   

@@ -291,6 +291,12 @@
  z-index: 1;
 }
 
+.research-text-1 p{
+  font-size: 1rem;
+  font-weight: regular;
+  margin-top: 20px;
+}
+
 .research-text-2{
   position:absolute;
   bottom:10%;
@@ -298,6 +304,11 @@
   transform: translate(10%,10%);
 z-index: 1;
   text-align: right;
+}
+.research-text-2 p{
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: regular;
 }
 
 .energy-thuster{
