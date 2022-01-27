@@ -10,7 +10,8 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">  
  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">  
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
- </head>  
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+</head>  
  <body>  
    <!-- Navbar Here -->  
    <nav class="navbar">  
@@ -135,9 +136,12 @@
 
   <div class="card-container">
     <a href="greenmobility.html">
-    <div class="card">
+    <div data-aos="fade-right" class="card">
       <h1>GREEN MOBILITY</h1>
-      <h6>E-Rikshaw | Application</h6>
+      <h6>
+        <span id="typed" style="white-space:pre;"></span> &nbsp;&nbsp;   Application
+      </h6>
+
       <div class="card-background">
         <img src="./images/card1.jpg" alt="">
       </div>
@@ -149,9 +153,11 @@
     </a>
 
     <a href="powerstorage.html">
-    <div class="card">
+    <div data-aos="fade-left" class="card">
       <h1>POWER STORAGE</h1>
-      <h6>Commercial | Storage</h6>
+      <h6>
+        <span id="typed-1" style="white-space:pre;"></span> &nbsp;&nbsp;   Application
+      </h6>
       <div class="card-background">
         <img src="./images/card2.jpg" alt="">
       </div>
@@ -176,9 +182,9 @@
 
 
   <div class="research">
-    <h1 class="research-text-1">Research and Development <br> is Our Heart Beat</h1>
+    <h1 class="research-text-1" data-aos="fade-right">Research and Development <br> is Our Heart Beat</h1>
 
-    <h1 class="research-text-2">Safe Trusted Innovative <br> E-Rex Batteries</h1>
+    <h1 class="research-text-2" data-aos="fade-left">Safe Trusted Innovative <br> E-Rex Batteries</h1>
 
     <img src="./images/research.jpg" alt="">
     <div class="overlay">
@@ -201,7 +207,7 @@
         Our advance technology improve safety and reliability and give thrust
         in performance.
         <br>
-       <span> Arriving Soon... </span>
+       <span data-aos="zoom-in"> Arriving Soon... </span>
       </p>
     </div>
   </div>
@@ -299,7 +305,7 @@ Sales/Dealership: 7665532476
  <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.instagram.com/erex_india/%3Fhl%3Den&ved=2ahUKEwjl-dWu28z1AhXwsVYBHck1AugQjjh6BAgFEAE&usg=AOvVaw2oEu-pQDX_5Hn8k9Xql5iX"> <i class="fab fa-instagram"></i></a>
  <a href="https://m.facebook.com/TheHeartOfEV/"> <i class="fab fa-facebook"></i></a>
   <!-- <i class="fab fa-twitter"></i> -->
- <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://in.linkedin.com/company/e-rex&ved=2ahUKEwiRm7SB28z1AhV2jVYBHVetD-cQjjh6BAhGEAE&usg=AOvVaw0QObqYAS-6DOp8-Nz6n6DC"><i class="fab fa-linkedin"></i></a> 
+  <a href="https://www.google.com/url?sa=t&source=web&rct=j&url=https://in.linkedin.com/company/e-rex&ved=2ahUKEwiRm7SB28z1AhV2jVYBHVetD-cQjjh6BAhGEAE&usg=AOvVaw0QObqYAS-6DOp8-Nz6n6DC"><i class="fab fa-linkedin"></i></a> 
  <a href="mailto:erexindia@gmail.com"> <i class="far fa-envelope"></i></a>
 </div>
 </div>
@@ -308,5 +314,23 @@ Sales/Dealership: 7665532476
    <script src="app.js"></script>  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- </body>  
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+var typed = new Typed("#typed", {
+  strings: ['E-cycle  ', 'E-Bike  ', 'E-Rikshaw  '],
+  typeSpeed: 50,
+  loop:true,
+});
+
+var typed1 = new Typed("#typed-1", {
+  strings: ['Solar', 'Agriculture', 'Industrial'],
+  typeSpeed: 50,
+  loop:true,
+});
+</script>
+</body>  
  </html>  
